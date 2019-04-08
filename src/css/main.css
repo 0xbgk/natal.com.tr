@@ -1,0 +1,35 @@
+body{
+    background: #fafafa  ;
+    font-family: 'Roboto Slab', serif;
+}
+header {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(120, 124, 121, 0.74)), to(rgba(53, 58, 54, 0.24))), url("../img/homepage.jpg");      
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+}
+header::after{
+    background: red;
+    z-index: 1;
+}
+nav a img{
+    width: auto;
+    height: 64px;
+}
+@media screen and (max-width:1300) {
+    header {
+        min-height: 800px;
+    }
+    
+}
+@media screen and (max-width:670px) {
+    header {
+        min-height: 500px;
+    }  
+    
+}
+#sendtop {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
