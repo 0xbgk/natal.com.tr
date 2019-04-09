@@ -1,17 +1,4 @@
 $(document).ready(function () {
-    $('.sidenav').sidenav();
-    $('.materialboxed').materialbox();
-    $('.parallax').parallax();
-    $('.tabs').tabs({
-        swipeable: false
-    });
-    $('.datepicker').datepicker({
-        disableWeekends: true
-    });
-    $('.tooltipped').tooltip();
-    $('.scrollspy').scrollSpy();
-
-
     $('#sendtop').on('click', function (e) {
 
         e.preventDefault();
@@ -22,3 +9,44 @@ $(document).ready(function () {
 
     });
 });
+
+// Navbar
+const dd = document.querySelector('.dropdown-trigger');
+M.Dropdown.init(dd, {
+    alignment: 'left',
+});
+
+// Sidenav
+const sideNav = document.querySelector('.sidenav');
+M.Sidenav.init(sideNav, {});
+
+// Slider
+const slider = document.querySelector('.slider');
+M.Slider.init(slider, {
+    indicators: true,
+    height: 500,
+    transition: 500,
+    interval: 6000
+});
+
+// Autocomplete
+const ac = document.querySelector('.autocomplete');
+M.Autocomplete.init(ac, {
+  data: {
+    "Aruba": null,
+    "Cancun Mexico": null,
+    "Hawaii": null,
+    "Florida": null,
+    "California": null,
+    "Jamacia": null,
+    "Europe": null,
+  }
+});
+
+// Material Boxed
+const mb = document.querySelectorAll('.materialboxed');
+M.Materialbox.init(mb, {});
+
+// Material Boxed
+const ss = document.querySelectorAll('.scrollspy');
+M.ScrollSpy.init(ss, {});

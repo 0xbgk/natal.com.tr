@@ -6,45 +6,325 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <title>Natal Aliminyum</title>
+
     <link rel="icon" type="image/png" href="src/img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="src/img/favicon-16x16.png" sizes="16x16" />
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <title>Natal Aluminium</title>
     <link rel="stylesheet" type='text/css' href='src/css/main.css'>
+    <link rel="stylesheet" type='text/css' href='src/css/flags.css'>
 </head>
 
-<body>
-    <nav class="nav-wrapper grey darken-1 z-depth-1">
-        <div class="container">
-            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-                <i class="material-icons">menu</i>
-            </a>
-            <a href="#" class="responsive-img right">
-                <img src="src/img/logo.jpg">
-            </a>
-            <ul class="hide-on-med-and-down left">
-                <li><a href="#home" class="white-text">Anasayfa</a></li>
-                <li><a href="#products" class="white-text">Ürünlerimiz</a></li>
-                <li><a href="#news" class="white-text">Haberler</a></li>
-                <li><a href="#aboutus" class="white-text">Hakkımızda</a></li>
-                <li><a href="#galery" class="white-text">Galeri</a></li>
-                <li><a href="#contact" class="white-text">İletişim</a></li>
-            </ul>
+<body id="home" class="scrollspy">
 
-            <ul class="sidenav grey lighten-4" id="mobile-menu">
-                <li><a href="#home">Anasayfa</a></li>
-                <li><a href="#products">Ürünlerimiz</a></li>
-                <li><a href="#news">Haberler</a></li>
-                <li><a href="#aboutus">Hakkımızda</a></li>
-                <li><a href="#galery">Galeri</a></li>
-                <li><a href="#contact">İletişim</a></li>
-            </ul>
+    <!--SECTION: NAVBAR-->
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper orange lighten-1 z-depth-1">
+            <div class="container">
+                
+                <a href="#" class="brand-logo left">Natal - Aliminyum</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="hide-on-med-and-down right">
+                    <li><a href="#" class="white-text">Anasayfa</a></li>
+                    <li><a href="#" class="white-text">Ürünler</a></li>
+                    <li><a href="#" class="white-text">Haberler</a></li>
+                    <li><a href="#" class="white-text">Hakkımızda</a></li>
+                    <li><a href="#" class="white-text">Galeri</a></li>
+                    <li><a href="#" class="white-text">İletişim</a></li>
+                    <li><a class='dropdown-trigger button orange lighten-1' href='#'
+                            data-target='dropdown-language'>Dil</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--SECTION: MOBILE NAV-->
+    <ul class="sidenav grey lighten-4" id="mobile-nav">
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Ürünlerimiz</a></li>
+        <li><a href="#">Haberler</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">Galeri</a></li>
+        <li><a href="#">İletişim</a></li>
+    </ul>
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown-language' class='dropdown-content'>
+        <li><a href="#tr"><img src="/src/img/blank.gif" class="flag flag-tr" alt="tr" /></a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#en"><img src="/src/img/blank.gif" class="flag flag-gb" alt="en" /></a></li>
+    </ul>
+
+    <!--SECTION: SLIDER-->
+    <section class="slider">
+        <ul class="slides">
+            <li>
+                <img src="src/img/resort1.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h2>This is our big Tagline!</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Incidunt, repudiandae.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="src/img/resort2.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h2>Left Aligned Caption</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quibusdam a nostrum veniam.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="src/img/resort3.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                    <h2>Right Aligned Caption</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quibusdam pariatur praesentium facere nulla voluptatibus.</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!--SECTION: SEARCH
+    <section id="search" class="section section-search grey darken-1 white-text center scrollspy">
+        <div class="containre">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Search Destinations</h3>
+                    <div class="input-field">
+                        <input type="text" class="white grey-text autocomplete" id="autocomplete-input"
+                            placeholder="Aruba, Cancun, etc...">
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
+    </section>
+-->
+   
+    <!--SECTION: HAKKIMIZDA-->
+    <section id="aboutus" class="section section-aboutus scrollspy">
+        <div class="container">
+            <div class="row">
+                <h3 class="center">Hakkımızda</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION: HABERLER-->
+    <section id="news" class="section section-popular scrollspy">
+        <div class="container">
+            <div class="row">
+                <h3 class="center">Haberler</h3>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/src/img/resort1.jpg" alt="">
+                            <span class="card-title">Lorem, ipsum.</span>
+                        </div>
+                        <div class="card-content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, facilis.
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/src/img/resort2.jpg" alt="">
+                            <span class="card-title">Lorem, ipsum.</span>
+                        </div>
+                        <div class="card-content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, facilis.
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="/src/img/resort3.jpg" alt="">
+                            <span class="card-title">Lorem, ipsum.</span>
+                        </div>
+                        <div class="card-content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, facilis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION: İLETİŞİM-->
+    <section id="contact" class="section section-icons grey lighten-4 center scrollspy">
+        <div class="container">
+            <h3>İletişim Bilgileri</h3>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card-panel">
+                        <i class="material-icons large orange-text">email</i>
+                        <h4>Email</h4>
+                        <p>natalnatal@natal.com</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel">
+                        <i class="material-icons large orange-text">phone_iphone</i>
+                        <h4>Telefon</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsum!</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel">
+                        <i class="material-icons large orange-text">location_city</i>
+                        <h4>Adres</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION: GALERİ-->
+    <section id="gallery" class="section section-gallery scrollspy">
+        <div class="container">
+            <h4 class="center">
+                <span class="teal-text">Photo</span> Gallery
+            </h4>
+            <div class="row">
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?beach" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?travel" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?nature" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?beach,travel" alt=""
+                        class="materialboxed responsive-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?water" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?building" alt=""
+                        class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?trees" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?cruise" alt="" class="materialboxed responsive-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?beaches" alt=""
+                        class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?traveling" alt=""
+                        class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?bridge" alt="" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?travel,boat" alt=""
+                        class="materialboxed responsive-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION: FOLLOW-->
+    <section class="section section-follow orange lighten-1 white-text center scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h4>Follow Natal</h4>
+                    <p>Follow us on social media</p>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-twitter fa-4x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-facebook fa-4x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-linkedin fa-4x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-google-plus fa-4x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION: SEND
+    <section id="send" class="section section-contact scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card-panel teal white-text center">
+                        <i class="material-icons">email</i>
+                        <h5>Contact us</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eaque!</p>
+                    </div>
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h4>Location</h4>
+                        </li>
+                        <li class="collection-item">Natal Aliminyum</li>
+                        <li class="collection-item">ADRESS Lorem, ipsum dolor.</li>
+                        <li class="collection-item">Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card-panel grey lighten-3">
+                        <h5>Please fill out this form</h5>
+                        <div class="input-field">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Phone">
+                        </div>
+                        <div class="input-field">
+                            <textarea class="materialize-textarea" placeholder="Enter Message"></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!--SECTION: FOOTER-->
+    <footer class="section orange lighten-1 white-text center">
+        
+                <a class="responsive-img center">
+                    <img src="src/img/logo.jpg">
+                </a>
+                
+        <p class="flow-text">NATAL &copy; 2019</p>
+    </footer>
+
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
