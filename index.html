@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" type='text/css' href='src/css/main.css'>
     <link rel="stylesheet" type='text/css' href='src/css/flags.css'>
+
+    <!--OWL Carousel-->
+    <link rel="stylesheet" href="/src/css/owl.carousel.css">
+    <link rel="stylesheet" href="/src/css/owl.theme.default.min.css">
 </head>
 
 <body id="home" class="scrollspy">
@@ -30,7 +34,7 @@
     <div class="navbar-fixed">
         <nav class="nav-wrapper orange lighten-1 z-depth-1">
             <div class="container">
-                
+
                 <a href="#" class="brand-logo left">Natal - Aliminyum</a>
                 <a href="#" class="sidenav-trigger" data-target="mobile-nav">
                     <i class="material-icons">menu</i>
@@ -112,15 +116,21 @@
         </div>
     </section>
 -->
-   
+
+
     <!--SECTION: HAKKIMIZDA-->
     <section id="aboutus" class="section section-aboutus scrollspy">
         <div class="container">
             <div class="row">
                 <h3 class="center">Hakkımızda</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quis, suscipit quam odio adipisci
+                    fugiat soluta aliquam natus quaerat possimus laborum molestiae neque maiores ea illo officia minima
+                    commodi nam fuga nulla deserunt. Natus sequi deserunt rerum et, tempore nam iste fugiat excepturi.
+                    Placeat odit doloribus laborum aspernatur maxime. Rem?</p>
             </div>
         </div>
     </section>
+    <div class="container grey darken-1 grey-text text-darken-1 center center-align" id="divider"></div>
 
     <!--SECTION: HABERLER-->
     <section id="news" class="section section-popular scrollspy">
@@ -163,6 +173,69 @@
             </div>
         </div>
     </section>
+    <div class="container grey darken-1 grey-text text-darken-1 center center-align" id="divider"></div>
+
+    <!--SECTION: ÜRÜNLER-->
+    <section id="products" class="section section-popular scrollspy">
+        <div class="container">
+            <div class="row">
+                <h3 class="center">Ürünler</h3>
+                <div class="col s12">
+                    <div class="owl-carousel owl-theme owl-wrapper-outer" id="owl-demo">
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="/src/img/resort3.jpg" alt="">
+                                    <span class="card-title"></span>
+                                </div>
+                                <div class="card-content grey-text text-darken-1">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="orange-text">Ürünü İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h1>2</h1>
+                        </div>
+                        <div class="item">
+                            <h1>3</h1>
+                        </div>
+                        <div class="item">
+                            <h1>4</h1>
+                        </div>
+                        <div class="item">
+                            <h1>5</h1>
+                        </div>
+                        <div class="item">
+                            <h1>6</h1>
+                        </div>
+                        <div class="item">
+                            <h1>7</h1>
+                        </div>
+                        <div class="item">
+                            <h1>8</h1>
+                        </div>
+                        <div class="item">
+                            <h1>9</h1>
+                        </div>
+                        <div class="item">
+                            <h1>10</h1>
+                        </div>
+                        <div class="item">
+                            <h1>11</h1>
+                        </div>
+                        <div class="item">
+                            <h1>12</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="container grey darken-1 grey-text text-darken-1 center center-align" id="divider"></div>
 
     <!--SECTION: İLETİŞİM-->
     <section id="contact" class="section section-icons grey lighten-4 center scrollspy">
@@ -193,6 +266,8 @@
             </div>
         </div>
     </section>
+
+    <div class="container grey darken-1 grey-text text-darken-1 center center-align" id="divider"></div>
 
     <!--SECTION: GALERİ-->
     <section id="gallery" class="section section-gallery scrollspy">
@@ -250,29 +325,8 @@
         </div>
     </section>
 
-    <!--SECTION: FOLLOW-->
-    <section class="section section-follow orange lighten-1 white-text center scrollspy">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h4>Follow Natal</h4>
-                    <p>Follow us on social media</p>
-                    <a href="#" class="white-text">
-                        <i class="fab fa-twitter fa-4x"></i>
-                    </a>
-                    <a href="#" class="white-text">
-                        <i class="fab fa-facebook fa-4x"></i>
-                    </a>
-                    <a href="#" class="white-text">
-                        <i class="fab fa-linkedin fa-4x"></i>
-                    </a>
-                    <a href="#" class="white-text">
-                        <i class="fab fa-google-plus fa-4x"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container grey darken-1 grey-text text-darken-1 center center-align" id="divider"></div>
+
 
     <!--SECTION: SEND
     <section id="send" class="section section-contact scrollspy">
@@ -316,19 +370,45 @@
     </section>
 -->
     <!--SECTION: FOOTER-->
-    <footer class="section orange lighten-1 white-text center">
-        
-                <a class="responsive-img center">
-                    <img src="src/img/logo.jpg">
-                </a>
-                
-        <p class="flow-text">NATAL &copy; 2019</p>
+    <footer class="page-footer orange lighten-1 white-text" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 center">
+                    <a href="#" class="white-text">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-google-plus fa-2x"></i>
+                    </a>
+                </div>
+                <div class="col s12 m6 center">
+                    <a class="responsive-img">
+                        <img src="src/img/logo.jpg" width="246" , height="98" id="logo">
+                    </a>
+                </div>
+
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="col s12 m4 center">
+                        <p>Copyright &copy; 2019 | Natal Aliminyum</p>
+                    </div>
+                </div>
+            </div>
     </footer>
 
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="/src/js/material.js"></script>
+    <script src="/src/js/jquery.min.js"></script>
+    <script src="src/js/owl.carousel.min.js"></script>
 </body>
 
 </html>

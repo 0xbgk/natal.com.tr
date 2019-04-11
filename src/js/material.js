@@ -1,4 +1,27 @@
 $(document).ready(function () {
+
+    $('.owl-carousel').owlCarousel({
+        autoPlay: 3000,
+        stopOnHover: true,
+        navigation: true,
+        paginationSpeed: 1000,
+        goToFirstSpeed: 2000,
+        singleItem: true,
+        autoHeight: true,
+        transitionStyle: "fade",
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+
     $('#sendtop').on('click', function (e) {
 
         e.preventDefault();
@@ -21,7 +44,7 @@ const sideNav = document.querySelector('.sidenav');
 M.Sidenav.init(sideNav, {});
 
 // Slider
-const slider = document.querySelector('.slider');
+const slider = document.querySelectorAll('.slider');
 M.Slider.init(slider, {
     indicators: true,
     height: 500,
@@ -32,15 +55,15 @@ M.Slider.init(slider, {
 // Autocomplete
 const ac = document.querySelector('.autocomplete');
 M.Autocomplete.init(ac, {
-  data: {
-    "Aruba": null,
-    "Cancun Mexico": null,
-    "Hawaii": null,
-    "Florida": null,
-    "California": null,
-    "Jamacia": null,
-    "Europe": null,
-  }
+    data: {
+        "Aruba": null,
+        "Cancun Mexico": null,
+        "Hawaii": null,
+        "Florida": null,
+        "California": null,
+        "Jamacia": null,
+        "Europe": null,
+    }
 });
 
 // Material Boxed
@@ -50,3 +73,4 @@ M.Materialbox.init(mb, {});
 // Material Boxed
 const ss = document.querySelectorAll('.scrollspy');
 M.ScrollSpy.init(ss, {});
+
