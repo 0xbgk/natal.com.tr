@@ -40,7 +40,7 @@ margin: 30px 10px !important;
     font-weight: bold;
 }
 
-#owl-demo .item{
+#owl-products .item, #owl-news .item{
     padding: 30px 0px;
     margin: 10px;
     color: #FFF;

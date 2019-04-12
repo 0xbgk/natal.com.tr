@@ -1,25 +1,63 @@
 $(document).ready(function () {
 
-    $('.owl-carousel').owlCarousel({
-        autoPlay: 3000,
-        stopOnHover: true,
-        navigation: true,
-        paginationSpeed: 1000,
-        goToFirstSpeed: 2000,
-        singleItem: true,
-        autoHeight: true,
-        transitionStyle: "fade",
+    $('#owl-products').owlCarousel({
         responsive: {
             0: {
                 items: 1
             },
             600: {
-                items: 1
+                items: 2
             },
             1000: {
                 items: 4
             }
-        }
+        },
+        loop: false,
+        nav: false,
+
+        // Autoplay
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+
+        // Basic Speeds
+        slideSpeed: 200,
+        paginationSpeed: 800,
+        rewindSpeed: 1000,
+
+        // Transition
+        transitionStyle : false,
+
+    });
+
+    $('#owl-news').owlCarousel({
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        },
+        loop: false,
+        nav: false,
+
+        // Autoplay
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+
+        // Basic Speeds
+        slideSpeed: 200,
+        paginationSpeed: 800,
+        rewindSpeed: 1000,
+
+        // Transition
+        transitionStyle : false,
+
     });
 
     $('#sendtop').on('click', function (e) {
