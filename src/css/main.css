@@ -12,6 +12,17 @@ header::after{
     background: red;
     z-index: 1;
 }
+.dropdown-content{   
+    display: inline;
+    text-align: center;       
+}
+.flag{
+    width: 35px;
+    height: 24px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
 #divider {    
     margin-top: 5px;
     margin-bottom: 5px;
@@ -51,7 +62,7 @@ margin: 30px 10px !important;
   }
   .google-maps {
     position: relative;
-    padding-bottom: 90%; // (450 ÷ 500 = 0.9 = 90%)
+    padding-bottom: 90%;
     height: 0;
     overflow: hidden;
 }
@@ -62,7 +73,52 @@ margin: 30px 10px !important;
     width: 100%;
     height: 100%;
 }
+footer .keys {
+    line-height: 1;
+    margin-right: 5px;
+    display: inline-block;
+}
+footer kbd {
+    border: 1px solid rgb(70, 70, 70);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    overflow: hidden;
+    text-align: center;
+    width: 16px;
+    height: 8px;
+    line-height: 10px;
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 100;
+}
+footer .topbottom {
+    display: inline-block;
+}
 
+#keyspos {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    line-height: 50px;
+    font-size: 12px;
+    -webkit-opacity: 1.0;
+    -moz-opacity: 1.0;
+    opacity: 1.0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    z-index: 5;
+    text-align: right;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
 @media screen and (max-width:1300) {
     header {
         min-height: 800px;

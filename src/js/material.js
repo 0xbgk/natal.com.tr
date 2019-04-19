@@ -16,7 +16,7 @@ $(document).ready(function () {
         nav: false,
 
         // Autoplay
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
 
@@ -46,7 +46,7 @@ $(document).ready(function () {
         nav: false,
 
         // Autoplay
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
 
@@ -69,6 +69,22 @@ $(document).ready(function () {
         }, 1000);
 
     });
+
+    // fullPage
+    $('#fullpage').fullpage({
+		//options here
+        autoScrolling:true,
+        scrollBar: true,
+        keyboardScrolling:true,
+        scrollHorizontally: true, 
+        navigation:true,
+        navigationPosition: 'left',
+        navigationTooltips: ['About Us', 'Products - News', 'Photo-Gallery', 'Contact', 'Footer'],
+        showActiveTooltip: false,
+        slidesNavigation: true,
+        slidesNavPosition: 'top',
+        // sectionsColor: ['#F5F5F5', '#E8E8E8', '#DCDCDC', '#D3D3D3'],        
+	});
 });
 
 // Navbar
