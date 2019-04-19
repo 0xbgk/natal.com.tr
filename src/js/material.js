@@ -65,7 +65,7 @@ $(document).ready(function () {
         e.preventDefault();
 
         $('html, body').animate({
-            scrollTop: $("header nav").offset().top
+            scrollTop: $("body").offset().top
         }, 1000);
 
     });
@@ -102,8 +102,8 @@ const slider = document.querySelectorAll('.slider');
 M.Slider.init(slider, {
     indicators: true,
     height: 500,
-    transition: 500,
-    interval: 6000
+    transition: 0,
+    interval: 100000
 });
 
 // Autocomplete
