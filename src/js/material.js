@@ -101,7 +101,7 @@ M.Sidenav.init(sideNav, {});
 const slider = document.querySelectorAll('.slider');
 M.Slider.init(slider, {
     indicators: true,
-    height: 500,
+    height: 700,
     transition: 0,
     interval: 100000
 });
