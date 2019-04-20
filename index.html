@@ -37,9 +37,10 @@
         <nav class="nav-wrapper grey darken-1 z-depth-1">
             <div class="container">
 
-                <a href="#home" class="brand-logo responsive-img">
+                <a href="#home" class="brand-logo responsive-img hide-on-med-and-down">
                     <img src="src/img/logo.jpg" width="246" , height="98" id="logo">
                 </a>
+                <a href="#home" class="brand-logo left hide-on-large-only">Natal - Aliminyum</a>
                 <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
                     <i class="material-icons">menu</i>
                 </a>
@@ -486,19 +487,21 @@
                         <h5>İletişim Formu</h5>
                         <form action="https://formspree.io/gorkemkizilok@msn.com" method="POST">
                             <div class="input-field">
-                                <input type="text"  class="name" name="İsim" placeholder="İsim*">
+                                <input type="text" class="name" name="İsim" placeholder="İsim*">
                             </div>
                             <div class="input-field">
                                 <input type="text" class="subject" name="Konu" placeholder="Konu*">
                             </div>
                             <div class="input-field">
-                                <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="phone" name="Telefon" placeholder="Telefon*">
+                                <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                                    class="phone" name="Telefon" placeholder="Telefon*">
                             </div>
                             <div class="input-field">
                                 <input type="email" class="email" name="Email" placeholder="Email*">
                             </div>
                             <div class="input-field">
-                                <textarea class="materialize-textarea message" name="Mesaj" placeholder="Mesajınız"></textarea>
+                                <textarea class="materialize-textarea message" name="Mesaj"
+                                    placeholder="Mesajınız"></textarea>
                             </div>
                             <input type="submit" value="Gönder" class="btn green submit">
                         </form>
@@ -506,12 +509,12 @@
                 </div>
                 <div class="col s12 m4">
                     <div class="card-panel">
-                        <i class="material-icons large grey-text">access_time business_center</i>
+                        <i class="material-icons large grey-text text-darken-4">access_time business_center</i>
                         <h5>Çalışma Saatleri</h5>
                         <br>
-                        <p class="left-align"><b>Pazartesi - Cuma :</b> 00.00 - 00.00</p>
-                        <p class="left-align"><b>Cumartesi :</b> 00.00 - 00.00</p>
-                        <p class="left-align"><b>Pazar :</b> 00.00 - 00.00</p>
+                        <h5 class="left-align"><b>Pazartesi - Cuma <br></b> 08.00 - 17.00</h5>
+                        <h5 class="left-align"><b>Cumartesi <br></b> 00.00 - 00.00</h5>
+                        <h5 class="left-align"><b>Pazar <br></b> 00.00 - 00.00</h5>
                     </div>
                 </div>
             </div>
@@ -521,41 +524,52 @@
 
 
 
-    <!--SECTION: FOOTER
-    <footer class="page-footer grey darken-1 white-text" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m6 center">
-                    <a href="#" class="white-text">
-                        <i class="fab fa-twitter fa-2x"></i>
-                    </a>
-                    <a href="#" class="white-text">
-                        <i class="fab fa-facebook fa-2x"></i>
-                    </a>
-                    <a href="#" class="white-text">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                    </a>
-                    <a href="#" class="white-text">
-                        <i class="fab fa-google-plus fa-2x"></i>
-                    </a>
-                </div>
-                <div class="col s12 m6 center">
-                    <a class="responsive-img">
-                        <img src="src/img/logo.jpg" width="246" , height="98" id="logo">
-                    </a>
-                </div>
+    <!--SECTION: FOOTER-->
+    <div class="container">
+        <footer class="page-footer grey darken-1 white-text" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l4 center-align">
+                        <h4>İletişim</h4>
+                        <span><i class="fa fa-map-marker"></i> Gökdere Cad.27/4 35040 Işıkkent Bornova İZMİR<br></span>
+                        <span><i class="fa fa-phone"></i> +90 232 349 11 44</span><br>
+                        <span><i class="fas fa-envelope"></i> <a href="mailto:info@natal.com"> info@natal.com</a></span>
+                    </div>
+                    <div class="col s12 m12 l4 center">
+                        <a class="responsive-img">
+                            <img src="src/img/logo.jpg" width="246" , height="98" id="logo">
+                        </a>
+                    </div>
+                    <div class="col s12 m12 l4 center-align">
+                        <a href="#" class="white-text">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="#" class="white-text">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="#" class="white-text">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="#" class="white-text">
+                            <i class="fab fa-google-plus fa-2x"></i>
+                        </a>
+                    </div>
 
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    <div class="col s12 m4 center">
-                        <p class="white-text">Copyright &copy; 2019 | Natal Alüminyum</p>
+                </div>
+                <!---->
+                <div class="footer-copyright grey darken-1">
+                    <div class="container">
+                        <div class="col s12 m4 center">
+                            <p class="white-text">Copyright &copy; 2019 | Natal Alüminyum</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-    </footer>
--->
-    <!--SECTION: NAVBAR-->
+        </footer>
+    </div>
+    <!-- send to top-->
+    <a class="btn-floating btn-large pulse grey darken-5" id="sendtop" href="#"><i
+            class="material-icons">arrow_drop_up</i></a>
+    <!--SECTION: NAVBAR
     <div class="navbar-fixed">
         <nav class="nav-wrapper grey darken-1 z-depth-1 bottomfooter">
             <div class="row">
@@ -582,13 +596,11 @@
                     <p class="white-text valign-wrapper">Copyright &copy; 2019 | Natal Alüminyum</p>
                 </div>
                 <div class="row">
-                    <!-- send to top-->
-                    <a class="btn-floating btn-large pulse grey darken-5" id="sendtop" href="#"><i
-                            class="material-icons">arrow_drop_up</i></a>
+                    
                 </div>
         </nav>
     </div>
-
+-->
     <!--SECTION: MOBILE NAV-->
     <ul class="sidenav grey lighten-4 right" id="mobile-nav">
         <li><a href="#">Anasayfa</a></li>

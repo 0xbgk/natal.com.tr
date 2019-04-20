@@ -87,7 +87,9 @@ margin: 3px 5px !important;
     width: 100%;
     height: 100%;
 }
-
+div footer a {
+    color: white;
+}
 @media screen and (max-width:1300) {
     header {
         min-height: 800px;
@@ -102,7 +104,7 @@ margin: 3px 5px !important;
 }
 #sendtop {
     position: fixed;
-    bottom: 70px;
+    bottom: 20px;
     right: 15px;
     z-index: 1;
 }
