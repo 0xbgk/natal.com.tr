@@ -26,7 +26,7 @@ $(document).ready(function () {
         rewindSpeed: 1000,
 
         // Transition
-        transitionStyle : false,
+        transitionStyle: false,
 
     });
 
@@ -56,10 +56,10 @@ $(document).ready(function () {
         rewindSpeed: 1000,
 
         // Transition
-        transitionStyle : false,
+        transitionStyle: false,
 
     });
-  
+
 });
 
 // Navbar
@@ -102,7 +102,7 @@ M.Materialbox.init(mb, {});
 // Material Boxed
 const ss = document.querySelectorAll('.scrollspy');
 M.ScrollSpy.init(ss, {
-    scrollOffset: 250,    
+    scrollOffset: 250,
 });
 
 const parallax = document.querySelector('.parallax');
@@ -117,15 +117,40 @@ AOS.init({
 
 var btn = $('#button');
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
 });
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
 });
+
+
+// ON SCROLL SHRINK NAVBAR
+window.onscroll = function () { scrollFunction() };
+
+var x = document.getElementsByClassName("navs");
+
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.height = "70px";
+        document.getElementById("logo").style.height = "70px";
+        
+        for(var i = 0 ; i < 6 ; i++)
+        {
+            x[i].style.lineHeight = "70px";
+        }
+    } else {
+        document.getElementById("navbar").style.height = "100px";
+        document.getElementById("logo").style.height = "100px";
+        for(var i = 0 ; i < 6 ; i++)
+        {
+            x[i].style.lineHeight = "100px";
+        }
+    }
+}

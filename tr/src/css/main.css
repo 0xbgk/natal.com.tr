@@ -102,7 +102,23 @@ div footer a {
     }  
     
 }
+#navbar{
+    background-color: #373737 !important;   
+    transition: 0.4s;    
+    z-index: 99;
+    vertical-align: baseline;
+    height:100px;
 
+}
+#navbar .navs{
+    line-height: 100px;
+    transition: 0.4s;    
+
+}
+#logo{
+    height: 100px;
+    transition: 0.4s;
+}
 .parallax-container{
     height: 350px;
 }
