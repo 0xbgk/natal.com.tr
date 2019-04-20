@@ -69,7 +69,7 @@
                 <img src="src/img/resort1.jpg"> <!-- random image -->
                 <div class="caption center-align">
                     <h2>Natal - Alüminyum</h2>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Natal Alüminyum San.Tic.A.Ş.</h5>                    
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Natal Alüminyum San.Tic.A.Ş.</h5>
                 </div>
             </li>
             <li>
@@ -484,22 +484,24 @@
                 <div class="col s12 m8">
                     <div class="card-panel grey lighten-5">
                         <h5>İletişim Formu</h5>
-                        <div class="input-field">
-                            <input type="text" placeholder="İsim*">
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Konu*">
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Telefon*">
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Email*">
-                        </div>
-                        <div class="input-field">
-                            <textarea class="materialize-textarea" placeholder="Mesajınız"></textarea>
-                        </div>
-                        <input type="submit" value="Gönder" class="btn green">
+                        <form action="https://formspree.io/gorkemkizilok@msn.com" method="POST">
+                            <div class="input-field">
+                                <input type="text"  class="name" name="İsim" placeholder="İsim*">
+                            </div>
+                            <div class="input-field">
+                                <input type="text" class="subject" name="Konu" placeholder="Konu*">
+                            </div>
+                            <div class="input-field">
+                                <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="phone" name="Telefon" placeholder="Telefon*">
+                            </div>
+                            <div class="input-field">
+                                <input type="email" class="email" name="Email" placeholder="Email*">
+                            </div>
+                            <div class="input-field">
+                                <textarea class="materialize-textarea message" name="Mesaj" placeholder="Mesajınız"></textarea>
+                            </div>
+                            <input type="submit" value="Gönder" class="btn green submit">
+                        </form>
                     </div>
                 </div>
                 <div class="col s12 m4">
@@ -632,6 +634,7 @@
     <script src="src/js/owl.carousel.min.js"></script>
     <script src="src/js/fullpage.js"></script>
     <script src="src/js/main.js"></script>
+    <script src="src/js/contact.js"></script>
 </body>
 
 </html>
