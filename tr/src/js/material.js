@@ -127,3 +127,7 @@ M.Materialbox.init(mb, {});
 // Material Boxed
 const ss = document.querySelectorAll('.scrollspy');
 M.ScrollSpy.init(ss, {});
+
+const parallax = document.querySelector('.parallax');
+M.Parallax.init(parallax, {})
+

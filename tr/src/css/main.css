@@ -108,3 +108,6 @@ div footer a {
     right: 15px;
     z-index: 1;
 }
+.parallax-container{
+    height: 350px;
+}
