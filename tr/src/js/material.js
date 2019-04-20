@@ -126,8 +126,16 @@ M.Materialbox.init(mb, {});
 
 // Material Boxed
 const ss = document.querySelectorAll('.scrollspy');
-M.ScrollSpy.init(ss, {});
+M.ScrollSpy.init(ss, {
+    scrollOffset: 250,    
+});
 
 const parallax = document.querySelector('.parallax');
 M.Parallax.init(parallax, {})
 
+AOS.init({
+    duration: 1500,
+    mirror: false,
+    once: false,
+
+});
