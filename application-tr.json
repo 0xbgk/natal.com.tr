@@ -1,0 +1,45 @@
+{
+    "title" : "Natal Alüminyum Sanayi Ve Ticaret Limited Şirketi",
+    "navbar": {
+        "homepage": "Anasayfa",
+        "aboutus": "Hakkımızda",
+        "products": "Ürünler",
+        "news": "Haberler",
+        "gallery": "Galeri",
+        "contact": "İletişim"        
+     },
+     "slider": {
+         "title" : "Natal - Alüminyum" ,
+         "text" : "Natal Alüminyum San.Tic.A.Ş."
+     },
+     "aboutus": {
+         "title1" : "Hakkımızda",
+         "title2" : "Vizyonumuz",
+         "title3" : "Kalite",
+         "text1" : "Natal firması 2007 yılında İzmir'de kurulmuş ve kurulduğu yıldan beri üretmiş olduğu CaSi, CaFe, Ca solid, FeTi, FeB, Aluminyum, Karbon ve Kükürt özlü teller ile kullanılmış olduğu firmalarda kalitesini ve verimini kanıtlamıştır.",
+         "text2" : "Müşteri ihtiyaçlarına uygun olarak sürdürülebilir kaliteyle üretim yapmak,",
+         "text3" : "Müşteri geri bildirimine önem vermek,",
+         "text4" : "Müşterilerimize mümkün olan en kısa sürede çözümler üretmek,",
+         "text5" : "Teknolojiyi yakından takip etmek ve bunu uygulamak.",
+         "text6" : "ISO 9001:2015 kalite sertifikasıyla Natal A.Ş., çelikhanelerde kullanılan özlü tel üretimi yapmaktadır."
+     },
+     "products": {
+        "title" : "Ürünler",
+        "text" : "Ürünü İncele"
+     },
+     "news" : {
+         "title" : "Haberler",
+         "content1" : "34. Uluslararası Metal Konferansı",
+         "content2" : "34. Uluslararası Metal Konferansı",
+         "text" : "Habere Git",
+         "new1" : {
+             "title" : "34. Uluslararası Metal Konferansı",
+             "text" : "11-13 Kasım tarihleri arasında Lisbon'da gerçekleştirilecek 34.Uluslararası Metal Konferansına katılım sağladık. "
+         },
+         "new2" : {
+            "title" : "Ankiros Fuarı",
+            "text" : "25-27 Ekim Tarihleri Arasında İstanbul'da gerçekleştirilen Ankiros fuarına katılım sağladık. Yeni işbirlikleri kurduğumuz ve dostlarımızla buluşabilme imkanı bulduğumuz fuarda standımızı ziyaret eden herkese teşekkür ederiz. "
+        }
+     }
+
+}

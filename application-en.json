@@ -1,0 +1,44 @@
+{
+    "title" : "Natal Aluminium Industry and Trade Limited Company",
+    "navbar": {
+        "homepage": "Home",
+        "aboutus": "About Us",
+        "products": "Products",
+        "news": "News",
+        "gallery": "Gallery",
+        "contact": "Contact"        
+     },
+     "slider": {
+         "title" : "Natal - Aluminium" ,
+         "text" : "Natal Aluminium Ind. and Tra. Ltd. Cmp."
+     },
+     "aboutus": {
+         "title1" : "About Us",
+         "title2" : "Vision",
+         "title3" : "Quality",
+         "text1" : "Natal has been established in 2007 and since then he has proved his quality and his yield for his products such as CaSi, CaFe, Ca Solid, FeTi, FeB, Aluminium, Carbon and Sulphur cored wires.",
+         "text2" : "To make sustainable quality production according to customer needs",
+         "text3" : "Pay attention to customer feedback",
+         "text4" : "To find solutions to our customers within the shortest time",
+         "text5" : "Monitoring technology closely and implement it",
+         "text6" : "Metser A.S. which has ISO 9001:2015 quality certificate is produced the Cored Wires which are used in steel plants."
+     },
+     "products": {
+        "title" : "Products",
+        "text" : "Show Product"
+     },
+     "news" : {
+         "title" : "News",
+         "content1" : "34th Internation Ferroalloys Conference",
+         "content2" : "Ankiros Fair",
+         "text" : "Show New",
+         "new1" : {
+             "title" : "34th Internation Ferroalloys Conference",
+             "text" : "We participated to 34th International Ferroalloys Conference been realised between 11-13 Nov. in Lisbon. "
+         },
+         "new2" : {
+            "title" : "Ankiros Fair",
+            "text" : "We were participated to Ankiros Fair in Istanbul between 25-27 October. We would like to present our kind thankful to all visitors who visited us at this fair in where we established the new cooperations and found the opportunities to meeting our friends."
+        }
+     }
+}
