@@ -15,12 +15,9 @@ hr {
     margin: 22px 0;
 }
 #aboutus{
-    height: 600px;
+    height: 650px;
 }
-.bottomfooter{
-    position: fixed;
-    bottom: 0;
-}
+
 .dropdown-content{   
     display: inline;
     text-align: center;       
@@ -49,10 +46,12 @@ nav a img{
     width: 90% !important;
     border: #f4f4f4 3px solid !important;
 }
-
-
 #footer {
-    height: auto;
+    background: #373737 !important;
+}
+#footercopy{
+    background: #373737 !important;
+
 }
 #footer .fa-2x {
 margin: 30px 10px !important;
