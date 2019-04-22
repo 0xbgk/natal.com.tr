@@ -1,7 +1,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
+    background: #f7f7f7 !important;    
 }
-
 p {
     color: #777;
     line-height: 20px;
@@ -14,13 +14,15 @@ hr {
     height: 1px;
     margin: 22px 0;
 }
+#divider {    
+    background-image: -webkit-linear-gradient(left, transparent, #DBDBDB, transparent);
+    background-image: linear-gradient(to right, transparent, #DBDBDB, transparent);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 3px !important;
+}
 #aboutus{
     height: 650px;
-}
-
-.dropdown-content{   
-    display: inline;
-    text-align: center;       
 }
 .flag{
     width: 35px;
@@ -29,53 +31,29 @@ hr {
     margin: 0 5px 0 0;
     vertical-align: middle;
 }
-#divider {    
-    background-image: -webkit-linear-gradient(left, transparent, #DBDBDB, transparent);
-    background-image: linear-gradient(to right, transparent, #DBDBDB, transparent);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 3px !important;
-}
-nav a img{
-    width: auto;
-    height: 64px;
-}
 .section-search input {
     padding: 5px !important;
     font-size: 18px !important;
     width: 90% !important;
     border: #f4f4f4 3px solid !important;
 }
-#footer {
-    background: #373737 !important;
-}
-#footercopy{
-    background: #373737 !important;
 
-}
-#footer .fa-2x {
-margin: 30px 10px !important;
-}
-#footer p {
-    font-size: 20px;
-    font-weight: bold;
-}
 div .fa-2x{
 margin: 3px 5px !important;
 }
 
-#owl-products .item, #owl-news .item{
-    padding: 30px 0px;
-    margin: 10px;
+#owl-products .item, #owl-news .item, #owl-about .item{
+    padding: 0px 0px;
+    margin-right: 10px;
     color: #FFF;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     text-align: center;
   }
-  .google-maps {
+.google-maps {
     position: relative;
-    padding-bottom: 90%;
+    padding-bottom: 40%;
     height: 0;
     overflow: hidden;
 }
@@ -86,33 +64,53 @@ margin: 3px 5px !important;
     width: 100%;
     height: 100%;
 }
-div footer a {
-    color: white;
+.language-name {
+    font-weight: bold;
 }
-@media screen and (max-width:1300) {
-    header {
-        min-height: 800px;
-    }
-    
+.carousel .indicators .indicator-item{
+    width: 16px ;
+    height: 16px ;
+    background-color: orangered;
 }
-@media screen and (max-width:670px) {
-    header {
-        min-height: 500px;
-    }  
-    
-}
-#navbar{
-    background-color: #373737 !important;   
+#navbar {    
+    background-color: white !important;   
     transition: 0.4s;    
     z-index: 99;
     vertical-align: baseline;
     height:100px;
-
+}
+#navbar-bottom {
+    background-color: white !important;       
+}
+#navbar-bottom ul {
+    width: 100%;
+    display: inline;
+}
+#navbar-bottom li {
+    width: 16%; 
+    text-transform: none;
+    font-weight: bold;
+    letter-spacing: 0.7px;  
+    transition: 0.5s;
+}
+#navbar-bottom li:hover {
+    letter-spacing: 1.5px;  
+    transition: 0.5s;
+    border-bottom: 1px orangered solid;
 }
 #navbar .navs{
     line-height: 100px;
     transition: 0.4s;    
-
+}
+.a-text{
+    color: black;
+    width: 100% !important;        
+}
+.collapsible-header {
+    display:list-item;
+}
+.card-height {
+height: 400px;
 }
 #logo{
     height: 100px;
@@ -121,7 +119,6 @@ div footer a {
 .parallax-container{
     height: 350px;
 }
-
 #button {
     display: inline-block;
     background-color: #FF9800;
@@ -138,7 +135,7 @@ div footer a {
     visibility: hidden;
     z-index: 1000;
   }
-  #button::after {
+#button::after {
     content: "\f077";
     font-family: FontAwesome;
     font-weight: normal;
@@ -147,14 +144,44 @@ div footer a {
     line-height: 50px;
     color: #fff;
   }
-  #button:hover {
+#button:hover {
     cursor: pointer;
     background-color: #333;
   }
-  #button:active {
+#button:active {
     background-color: #555;
   }
-  #button.show {
+#button.show {
     opacity: 1;
     visibility: visible;
   }
+#footer {
+    bottom: 0;
+    background: #565658 !important;
+}
+#footercopy{
+    background: #565658 !important;
+}
+#footer .fa-2x {
+margin: 30px 10px !important;
+}
+#footer p {
+    font-size: 20px;
+    font-weight: bold;
+}
+div footer a {
+    color: white;
+}
+@media screen and (max-width:1300) {
+    header {
+        min-height: 800px;
+    } 
+}
+@media screen and (max-width:670px) {
+    header {
+        min-height: 500px;
+    }      
+    .language-name {
+       display: none;
+    }
+}

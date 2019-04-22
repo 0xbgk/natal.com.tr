@@ -1,5 +1,37 @@
 $(document).ready(function () {
 
+    $('#owl-about').owlCarousel({
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        },
+        loop: true,
+        nav: false,
+        dots: false,
+        // Autoplay
+        autoplay: true,
+        autoplayTimeout: 10000,
+        autoplayHoverPause: true,
+
+        // Basic Speeds
+        slideSpeed: 200,
+        paginationSpeed: 800,
+        rewindSpeed: 1000,
+
+        // Transition
+        transitionStyle: true, 
+        autoWidth:false,
+
+
+    });
+
     $('#owl-products').owlCarousel({
         responsive: {
             0: {
@@ -55,15 +87,31 @@ $(document).ready(function () {
         paginationSpeed: 800,
         rewindSpeed: 1000,
 
-        // Transition
+        // Transition   
         transitionStyle: false,
 
+    });
+
+    // fullPage
+    $('#fullpage').fullpage({
+        //options here
+        autoScrolling: false,
+        scrollBar: true,
+        keyboardScrolling: false,
+        scrollHorizontally: false,
+        navigation: false,
+        navigationPosition: 'left',
+        showActiveTooltip: false,
+        slidesNavigation: true,
+        slidesNavPosition: 'top',
+        controlArrows: true,
+        verticalCentered: true,
     });
 
 });
 
 // Navbar
-const dd = document.querySelector('.dropdown-trigger');
+const dd = document.querySelectorAll('.dropdown-trigger');
 M.Dropdown.init(dd, {
     alignment: 'left',
 });
@@ -76,9 +124,9 @@ M.Sidenav.init(sideNav, {});
 const slider = document.querySelectorAll('.slider');
 M.Slider.init(slider, {
     indicators: true,
-    height: 700,
-    transition: 0,
-    interval: 100000
+    height: 450,
+    transition: 2500,
+    interval: 5000,
 });
 
 // Autocomplete
@@ -99,14 +147,27 @@ M.Autocomplete.init(ac, {
 const mb = document.querySelectorAll('.materialboxed');
 M.Materialbox.init(mb, {});
 
-// Material Boxed
 const ss = document.querySelectorAll('.scrollspy');
 M.ScrollSpy.init(ss, {
     scrollOffset: 250,
 });
 
 const parallax = document.querySelector('.parallax');
-M.Parallax.init(parallax, {})
+M.Parallax.init(parallax, {});
+
+const collapsible = document.querySelectorAll('.collapsible');
+M.Collapsible.init(collapsible, {});
+
+const carousel = document.querySelector('.carousel');
+const instance = M.Carousel.init(carousel, {
+    fullWidth: false,
+    indicators: true,
+    duration: 1000
+});
+
+var interval = setInterval(() => {
+    instance.next(); 
+}, 10000);
 
 AOS.init({
     duration: 1500,
@@ -132,6 +193,7 @@ btn.on('click', function (e) {
 
 
 // ON SCROLL SHRINK NAVBAR
+/*
 window.onscroll = function () { scrollFunction() };
 
 var x = document.getElementsByClassName("navs");
@@ -140,7 +202,7 @@ function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("navbar").style.height = "70px";
         document.getElementById("logo").style.height = "70px";
-        
+
         for(var i = 0 ; i < 6 ; i++)
         {
             x[i].style.lineHeight = "70px";
@@ -155,3 +217,4 @@ function scrollFunction() {
     }
 }
 
+*/
