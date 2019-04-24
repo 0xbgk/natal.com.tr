@@ -141,14 +141,14 @@ function scrollFunction() {
         document.getElementById("navbar").style.height = "70px";
         document.getElementById("logo").style.height = "70px";
         
-        for(var i = 0 ; i < 6 ; i++)
+        for(var i = 0 ; i < 7 ; i++)
         {
             x[i].style.lineHeight = "70px";
         }
     } else {
         document.getElementById("navbar").style.height = "100px";
         document.getElementById("logo").style.height = "100px";
-        for(var i = 0 ; i < 6 ; i++)
+        for(var i = 0 ; i < 7 ; i++)
         {
             x[i].style.lineHeight = "100px";
         }

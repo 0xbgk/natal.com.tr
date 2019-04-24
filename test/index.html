@@ -60,7 +60,7 @@
 <body id="home" class="scrollspy grey lighten-5">
     <!--SECTION: NAVBAR-->
     <div class="navbar-fixed">
-        <nav class="nav-wrapper z-depth-1" id="navbar">
+        <nav class="nav-wrapper white z-depth-1" id="navbar">
             <div class="container">
 
                 <a href="#home" class="brand-logo responsive-img">
@@ -74,16 +74,16 @@
                 </a>
 
                 <ul class="hide-on-med-and-down right">
-                    <li><a href="#home" class="white-text text-darken-4 navs" data-localize="navbar.homepage">Anasayfa</a></li>
-                    <li><a href="#aboutus" class="white-text text-darken-4 navs" data-localize="navbar.aboutus">Hakkımızda</a></li>
-                    <li><a href="#products" class="white-text text-darken-4 navs" data-localize="navbar.products">Ürünler</a></li>
-                    <li><a href="#news" class="white-text text-darken-4 navs" data-localize="navbar.news">Haberler</a></li>
-                    <li><a href="#gallery" class="white-text text-darken-4 navs" data-localize="navbar.gallery">Galeri</a></li>
-                    <li><a href="#contact" class="white-text text-darken-4 navs" data-localize="navbar.contact">İletişim</a></li>
+                    <li><a href="#home" class="grey-text text-darken-4 navs" data-localize="navbar.homepage">Anasayfa</a></li>
+                    <li><a href="#aboutus" class="grey-text text-darken-4 navs" data-localize="navbar.aboutus">Hakkımızda</a></li>
+                    <li><a href="#products" class="grey-text text-darken-4 navs" data-localize="navbar.products">Ürünler</a></li>
+                    <li><a href="#news" class="grey-text text-darken-4 navs" data-localize="navbar.news">Haberler</a></li>
+                    <li><a href="#gallery" class="grey-text text-darken-4 navs" data-localize="navbar.gallery">Galeri</a></li>
+                    <li><a href="#contact" class="grey-text text-darken-4 navs" data-localize="navbar.contact">İletişim</a></li>
                     <li>
                         <a class='dropdown-trigger button' href='#' data-target='dropdown-language'>
-                            <span class="flag flag-tr"></span>
-                            <span class="language-name white-text text-darken-4">Türkçe</span>
+                            <span class="flag flag-tr" id="flag-img"></span>
+                            <span class="language-name grey-text text-darken-4 navs" data-localize="navbar.language">Türkçe</span>
                         </a>
                     </li>
                 </ul>
@@ -95,17 +95,19 @@
     <section class="slider">
         <ul class="slides">
             <li>
-                <img src="src/img/gallery/DJI_0003.jpg"> <!-- random image -->
+                <img src="src/img/products/filllayoutnieder_undgegendruckguss.jpg"> 
+               <!--
                 <div class="caption center-align">
                     <h2 data-localize="slider.title">Natal - Alüminyum</h2>
                     <h5 class="light grey-text text-lighten-3 hide-on-small-only" data-localize="slider.text">Natal Alüminyum San.Tic.A.Ş.</h5>
                 </div>
+                -->
             </li>
             <li>
-                <img src="src/img/gallery/DJI_0043.jpg"> <!-- random image -->
+                <img src="src/img/products/fillniederdruckgiemaschinelowpressurecaster.jpg"> <!-- random image -->
             </li>
             <li>
-                <img src="src/img/gallery/DJI_0046.jpg"> <!-- random image -->
+                <img src="src/img/products/gimatec8001000_2.jpg"> <!-- random image -->
             </li>
         </ul>
     </section>
@@ -157,19 +159,110 @@
                 <div class="col s12">
                     <div class="owl-carousel owl-theme owl-wrapper-outer" id="owl-products">
                         <div class="item">
-                            <div class="card">
+                            <div class="card hoverable">
                                 <div class="card-image">
-                                    <img src="src/img/products/FeSiMg.jpg" alt="">
+                                    <img src="src/img/products/gimatec8001000_1.jpg" alt="">
                                     <span class="card-title"></span>
                                 </div>
-                                <div class="card-content grey-text text-darken-1">
+                                <div class="card-content grey-text text-darken-1 truncate">
                                     FeSiMg
                                 </div>
                                 <div class="card-action">
-                                    <a href="fesimg.html" class="orange-text" data-localize="products.text">Ürünü İncele</a>
+                                    <a href="#" class="orange-text" data-localize="products.text">Ürünü
+                                        İncele</a>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
+                        <div class="item">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="src/img/products/AL.jpg" alt="">
+                                    <span class="card-title"></span>
+                                </div>
+                                <div class="card-content grey-text text-darken-1 truncate">
+                                    Al
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="orange-text" data-localize="products.text">Ürünü
+                                        İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="src/img/products/S.jpg" alt="">
+                                    <span class="card-title"></span>
+                                </div>
+                                <div class="card-content grey-text text-darken-1 truncate">
+                                    S
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="orange-text" data-localize="products.text">Ürünü
+                                        İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="src/img/products/casi.jpg" alt="">
+                                    <span class="card-title"></span>
+                                </div>
+                                <div class="card-content grey-text text-darken-1 truncate">
+                                    casi
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="orange-text" data-localize="products.text">Ürünü
+                                        İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="src/img/products/casolid05.png" alt="">
+                                    <span class="card-title"></span>
+                                </div>
+                                <div class="card-content grey-text text-darken-1 truncate">
+                                    casolid5
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="orange-text" data-localize="products.text">Ürünü
+                                        İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="src/img/products/feti.png" alt="">
+                                    <span class="card-title"></span>
+                                </div>
+                                <div class="card-content grey-text text-darken-1 truncate">
+                                    feti
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="orange-text" data-localize="products.text">Ürünü
+                                        İncele</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="src/img/products/gimatec8001000_2.jpg" alt="">
+                                    <span class="card-title"></span>
+                                </div>
+                                <div class="card-content grey-text text-darken-1 truncate">
+                                    S
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="orange-text" data-localize="products.text">Ürünü
+                                        İncele</a>
+                                </div>
+                            </div>
+                        </div>                     
                     </div>
                 </div>
 
@@ -417,27 +510,27 @@
     <!-- Dropdown Structure -->
     <ul id='dropdown-language' class='dropdown-content'>
         <li id="langTR">
-            <a href="#">
+            <a>
                 <span class="flag flag-tr"></span>
-                <span class="grey-text text-darken-4">Türkçe</span></a>
+                <span class="language-name grey-text text-darken-4">Türkçe</span></a>
         </li>
         <li class="divider" tabindex="-1"></li>
         <li id="langENG">
-            <a href="">
+            <a>
                 <span class="flag flag-gb"></span>
-                <span class="grey-text text-darken-4">English</span></a>
+                <span class="language-name grey-text text-darken-4">English</span></a>
         </li>
         <li class="divider" tabindex="-1"></li>
-        <li>
-            <a href="">
+        <li id="langDE">
+            <a>
                 <span class="flag flag-de"></span>
-                <span class="grey-text text-darken-4">Deutsch</span></a>
+                <span class="language-name grey-text text-darken-4">Deutsch</span></a>
         </li>
         <li class="divider" tabindex="-1"></li>
-        <li>
-            <a href="">
+        <li id="langRU">
+            <a>
                 <span class="flag flag-ru"></span>
-                <span class="grey-text text-darken-4">Pусский</span></a>
+                <span class="language-name grey-text text-darken-4">Pусский</span></a>
         </li>
     </ul>
 
