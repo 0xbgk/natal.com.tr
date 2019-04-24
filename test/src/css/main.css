@@ -1,0 +1,160 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    color: #777;
+    line-height: 20px;
+    margin: 0 0 20px;
+}
+hr {
+    background-image: -webkit-linear-gradient(left, transparent, #DBDBDB, transparent);
+    background-image: linear-gradient(to right, transparent, #DBDBDB, transparent);
+    border: 0;
+    height: 1px;
+    margin: 22px 0;
+}
+#aboutus{
+    height: 650px;
+}
+
+.dropdown-content{   
+    display: inline;
+    text-align: center;       
+}
+.flag{
+    width: 35px;
+    height: 24px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+#divider {    
+    background-image: -webkit-linear-gradient(left, transparent, #DBDBDB, transparent);
+    background-image: linear-gradient(to right, transparent, #DBDBDB, transparent);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 3px !important;
+}
+nav a img{
+    width: auto;
+    height: 64px;
+}
+.section-search input {
+    padding: 5px !important;
+    font-size: 18px !important;
+    width: 90% !important;
+    border: #f4f4f4 3px solid !important;
+}
+#footer {
+    background: #373737 !important;
+}
+#footercopy{
+    background: #373737 !important;
+
+}
+#footer .fa-2x {
+margin: 30px 10px !important;
+}
+#footer p {
+    font-size: 20px;
+    font-weight: bold;
+}
+div .fa-2x{
+margin: 3px 5px !important;
+}
+
+#owl-products .item, #owl-news .item{
+    padding: 30px 0px;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+  }
+  .google-maps {
+    position: relative;
+    padding-bottom: 90%;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+div footer a {
+    color: white;
+}
+@media screen and (max-width:1300) {
+    header {
+        min-height: 800px;
+    }
+    
+}
+@media screen and (max-width:670px) {
+    header {
+        min-height: 500px;
+    }  
+    
+}
+#navbar{
+    background-color: #373737 !important;   
+    transition: 0.4s;    
+    z-index: 99;
+    vertical-align: baseline;
+    height:100px;
+
+}
+#navbar .navs{
+    line-height: 100px;
+    transition: 0.4s;    
+
+}
+#logo{
+    height: 100px;
+    transition: 0.4s;
+}
+.parallax-container{
+    height: 350px;
+}
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
